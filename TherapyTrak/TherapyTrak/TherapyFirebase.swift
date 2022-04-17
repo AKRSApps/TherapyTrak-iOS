@@ -230,7 +230,7 @@ func uploadTherapyVideosStorage(therapyVideoFile: URL, therapyVideoUUID: String,
     
     guard let therapyGoogleUserUnwrapped = therapyGoogleUser else { return }
     
-    therapyStoreageReference = therapyStoreageReference.child("\(therapyGoogleUserUnwrapped.userID ?? "ERROR")/\(therapyVideoUUID).mp4")
+    therapyStoreageReference = therapyStoreageReference.root().child("\(therapyGoogleUserUnwrapped.userID ?? "ERROR")/\(therapyVideoUUID).mp4")
     therapyStoreageReference.putFile(from: therapyVideoFile, metadata: nil) { therapyFileUploadMetaData, therapyFileUploadError in
         if therapyFileUploadError == nil {
             uploadVideoStatistics(recordTherapyStats: recordTherapyStats)
