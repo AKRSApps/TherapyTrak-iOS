@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>198516349884-cgdrjm7upr0t2r6lsh2tk8nc9p0i49eo.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.198516349884-cgdrjm7upr0t2r6lsh2tk8nc9p0i49eo</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCRGebsforRRaixTUVkteHFfFh3s3lUq7Q</string>
+	<key>GCM_SENDER_ID</key>
+	<string>198516349884</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.LAHacks.TherapyTrak</string>
+	<key>PROJECT_ID</key>
+	<string>therapytrak-8c0dc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>therapytrak-8c0dc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:198516349884:ios:e1069511727265f5b2e9b9</string>
+	<key>DATABASE_URL</key>
+	<string>https://therapytrak-8c0dc-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

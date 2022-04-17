@@ -1,0 +1,823 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		020B3E36280A84FD00500180 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020B3E35280A84FD00500180 /* AppDelegate.swift */; };
+		020B3E38280A84FD00500180 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020B3E37280A84FD00500180 /* SceneDelegate.swift */; };
+		020B3E3A280A84FD00500180 /* RecordTherapyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020B3E39280A84FD00500180 /* RecordTherapyViewController.swift */; };
+		020B3E3D280A84FD00500180 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 020B3E3B280A84FD00500180 /* Main.storyboard */; };
+		020B3E3F280A84FE00500180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 020B3E3E280A84FE00500180 /* Assets.xcassets */; };
+		020B3E42280A84FE00500180 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 020B3E40280A84FE00500180 /* LaunchScreen.storyboard */; };
+		020B3E4D280A84FE00500180 /* TherapyTrakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020B3E4C280A84FE00500180 /* TherapyTrakTests.swift */; };
+		020B3E57280A84FE00500180 /* TherapyTrakUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020B3E56280A84FE00500180 /* TherapyTrakUITests.swift */; };
+		020B3E59280A84FE00500180 /* TherapyTrakUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020B3E58280A84FE00500180 /* TherapyTrakUITestsLaunchTests.swift */; };
+		02365101280B92BE00763053 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02365100280B92BE00763053 /* SettingsView.swift */; };
+		023F2E0A280BB2C000627C4E /* TherapistPatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023F2E09280BB2C000627C4E /* TherapistPatient.swift */; };
+		0263EFEB280AEF1900C81D37 /* TherapyFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263EFEA280AEF1900C81D37 /* TherapyFirebase.swift */; };
+		026ABD92280AB1B400D40C36 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026ABD91280AB1B400D40C36 /* HealthKit.framework */; };
+		026AC9ED280B64FE0000765A /* TherapyHomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026AC9EC280B64FE0000765A /* TherapyHomeScreenViewController.swift */; };
+		026AC9EF280B678D0000765A /* TherapySessionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026AC9EE280B678D0000765A /* TherapySessionTableViewCell.swift */; };
+		02D6DA8E280AE64D00A7EF4C /* TherapySignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D6DA8D280AE64D00A7EF4C /* TherapySignInViewController.swift */; };
+		02F30903280A8665002545C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02F30902280A8665002545C4 /* GoogleService-Info.plist */; };
+		02F30905280A9DC7002545C4 /* LoginScreenTherapy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F30904280A9DC7002545C4 /* LoginScreenTherapy.swift */; };
+		27E28C478DF81EAAC7D4F05A /* Pods_TherapyTrak_TherapyTrakUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157064CA830F30B2BD54A710 /* Pods_TherapyTrak_TherapyTrakUITests.framework */; };
+		5E718192DD18F9201174334C /* Pods_TherapyTrak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18FFE22C1507A85DBFA92B0 /* Pods_TherapyTrak.framework */; };
+		CB1309F8AD061E45E7D4395F /* Pods_TherapyTrakTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4758AE4162BA97DAD36687 /* Pods_TherapyTrakTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		020B3E49280A84FE00500180 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 020B3E2A280A84FD00500180 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 020B3E31280A84FD00500180;
+			remoteInfo = TherapyTrak;
+		};
+		020B3E53280A84FE00500180 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 020B3E2A280A84FD00500180 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 020B3E31280A84FD00500180;
+			remoteInfo = TherapyTrak;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		020B3E32280A84FD00500180 /* TherapyTrak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TherapyTrak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		020B3E35280A84FD00500180 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		020B3E37280A84FD00500180 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		020B3E39280A84FD00500180 /* RecordTherapyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTherapyViewController.swift; sourceTree = "<group>"; };
+		020B3E3C280A84FD00500180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		020B3E3E280A84FE00500180 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		020B3E41280A84FE00500180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		020B3E43280A84FE00500180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		020B3E48280A84FE00500180 /* TherapyTrakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TherapyTrakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		020B3E4C280A84FE00500180 /* TherapyTrakTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapyTrakTests.swift; sourceTree = "<group>"; };
+		020B3E52280A84FE00500180 /* TherapyTrakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TherapyTrakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		020B3E56280A84FE00500180 /* TherapyTrakUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapyTrakUITests.swift; sourceTree = "<group>"; };
+		020B3E58280A84FE00500180 /* TherapyTrakUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapyTrakUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		02365100280B92BE00763053 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		023F2E09280BB2C000627C4E /* TherapistPatient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistPatient.swift; sourceTree = "<group>"; };
+		0263EFEA280AEF1900C81D37 /* TherapyFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapyFirebase.swift; sourceTree = "<group>"; };
+		026ABD90280AB1B400D40C36 /* TherapyTrak.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TherapyTrak.entitlements; sourceTree = "<group>"; };
+		026ABD91280AB1B400D40C36 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		026AC9EC280B64FE0000765A /* TherapyHomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapyHomeScreenViewController.swift; sourceTree = "<group>"; };
+		026AC9EE280B678D0000765A /* TherapySessionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapySessionTableViewCell.swift; sourceTree = "<group>"; };
+		02D6DA8D280AE64D00A7EF4C /* TherapySignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapySignInViewController.swift; sourceTree = "<group>"; };
+		02F30902280A8665002545C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		02F30904280A9DC7002545C4 /* LoginScreenTherapy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginScreenTherapy.swift; path = TherapyTrak/LoginScreenTherapy.swift; sourceTree = SOURCE_ROOT; };
+		157064CA830F30B2BD54A710 /* Pods_TherapyTrak_TherapyTrakUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TherapyTrak_TherapyTrakUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D8C9F9CB89E72E2ABE6473E /* Pods-TherapyTrak-TherapyTrakUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TherapyTrak-TherapyTrakUITests.release.xcconfig"; path = "Target Support Files/Pods-TherapyTrak-TherapyTrakUITests/Pods-TherapyTrak-TherapyTrakUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6B1FB8B2F81FFB2147AFF49A /* Pods-TherapyTrak-TherapyTrakUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TherapyTrak-TherapyTrakUITests.debug.xcconfig"; path = "Target Support Files/Pods-TherapyTrak-TherapyTrakUITests/Pods-TherapyTrak-TherapyTrakUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7669C01AE0D0DBF9B14FAD4A /* Pods-TherapyTrak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TherapyTrak.release.xcconfig"; path = "Target Support Files/Pods-TherapyTrak/Pods-TherapyTrak.release.xcconfig"; sourceTree = "<group>"; };
+		88DF67ACCDA7103588FEED3E /* Pods-TherapyTrakTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TherapyTrakTests.release.xcconfig"; path = "Target Support Files/Pods-TherapyTrakTests/Pods-TherapyTrakTests.release.xcconfig"; sourceTree = "<group>"; };
+		9E5754B2BC1DB42D74E52532 /* Pods-TherapyTrakTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TherapyTrakTests.debug.xcconfig"; path = "Target Support Files/Pods-TherapyTrakTests/Pods-TherapyTrakTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A18FFE22C1507A85DBFA92B0 /* Pods_TherapyTrak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TherapyTrak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C94DDD49408DAE4E0AD3232C /* Pods-TherapyTrak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TherapyTrak.debug.xcconfig"; path = "Target Support Files/Pods-TherapyTrak/Pods-TherapyTrak.debug.xcconfig"; sourceTree = "<group>"; };
+		DD4758AE4162BA97DAD36687 /* Pods_TherapyTrakTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TherapyTrakTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		020B3E2F280A84FD00500180 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E718192DD18F9201174334C /* Pods_TherapyTrak.framework in Frameworks */,
+				026ABD92280AB1B400D40C36 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		020B3E45280A84FE00500180 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1309F8AD061E45E7D4395F /* Pods_TherapyTrakTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		020B3E4F280A84FE00500180 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E28C478DF81EAAC7D4F05A /* Pods_TherapyTrak_TherapyTrakUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		020B3E29280A84FD00500180 = {
+			isa = PBXGroup;
+			children = (
+				020B3E34280A84FD00500180 /* TherapyTrak */,
+				020B3E4B280A84FE00500180 /* TherapyTrakTests */,
+				020B3E55280A84FE00500180 /* TherapyTrakUITests */,
+				020B3E33280A84FD00500180 /* Products */,
+				5B6BF9B1B199EC87924CA1BE /* Pods */,
+				3C7B8237FAA35B9780CCCC4D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		020B3E33280A84FD00500180 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				020B3E32280A84FD00500180 /* TherapyTrak.app */,
+				020B3E48280A84FE00500180 /* TherapyTrakTests.xctest */,
+				020B3E52280A84FE00500180 /* TherapyTrakUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		020B3E34280A84FD00500180 /* TherapyTrak */ = {
+			isa = PBXGroup;
+			children = (
+				026ABD90280AB1B400D40C36 /* TherapyTrak.entitlements */,
+				020B3E35280A84FD00500180 /* AppDelegate.swift */,
+				020B3E37280A84FD00500180 /* SceneDelegate.swift */,
+				0263EFEA280AEF1900C81D37 /* TherapyFirebase.swift */,
+				026AC9EC280B64FE0000765A /* TherapyHomeScreenViewController.swift */,
+				020B3E39280A84FD00500180 /* RecordTherapyViewController.swift */,
+				020B3E3B280A84FD00500180 /* Main.storyboard */,
+				026AC9EE280B678D0000765A /* TherapySessionTableViewCell.swift */,
+				023650FF280B92A700763053 /* Settings */,
+				025A6D53280B38B000B330F2 /* Log-In */,
+				020B3E3E280A84FE00500180 /* Assets.xcassets */,
+				020B3E40280A84FE00500180 /* LaunchScreen.storyboard */,
+				020B3E43280A84FE00500180 /* Info.plist */,
+				02F30902280A8665002545C4 /* GoogleService-Info.plist */,
+			);
+			path = TherapyTrak;
+			sourceTree = "<group>";
+		};
+		020B3E4B280A84FE00500180 /* TherapyTrakTests */ = {
+			isa = PBXGroup;
+			children = (
+				020B3E4C280A84FE00500180 /* TherapyTrakTests.swift */,
+			);
+			path = TherapyTrakTests;
+			sourceTree = "<group>";
+		};
+		020B3E55280A84FE00500180 /* TherapyTrakUITests */ = {
+			isa = PBXGroup;
+			children = (
+				020B3E56280A84FE00500180 /* TherapyTrakUITests.swift */,
+				020B3E58280A84FE00500180 /* TherapyTrakUITestsLaunchTests.swift */,
+			);
+			path = TherapyTrakUITests;
+			sourceTree = "<group>";
+		};
+		023650FF280B92A700763053 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				02365100280B92BE00763053 /* SettingsView.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		025A6D53280B38B000B330F2 /* Log-In */ = {
+			isa = PBXGroup;
+			children = (
+				02D6DA8D280AE64D00A7EF4C /* TherapySignInViewController.swift */,
+				02F30904280A9DC7002545C4 /* LoginScreenTherapy.swift */,
+				023F2E09280BB2C000627C4E /* TherapistPatient.swift */,
+			);
+			name = "Log-In";
+			sourceTree = "<group>";
+		};
+		3C7B8237FAA35B9780CCCC4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				026ABD91280AB1B400D40C36 /* HealthKit.framework */,
+				A18FFE22C1507A85DBFA92B0 /* Pods_TherapyTrak.framework */,
+				157064CA830F30B2BD54A710 /* Pods_TherapyTrak_TherapyTrakUITests.framework */,
+				DD4758AE4162BA97DAD36687 /* Pods_TherapyTrakTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B6BF9B1B199EC87924CA1BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C94DDD49408DAE4E0AD3232C /* Pods-TherapyTrak.debug.xcconfig */,
+				7669C01AE0D0DBF9B14FAD4A /* Pods-TherapyTrak.release.xcconfig */,
+				6B1FB8B2F81FFB2147AFF49A /* Pods-TherapyTrak-TherapyTrakUITests.debug.xcconfig */,
+				2D8C9F9CB89E72E2ABE6473E /* Pods-TherapyTrak-TherapyTrakUITests.release.xcconfig */,
+				9E5754B2BC1DB42D74E52532 /* Pods-TherapyTrakTests.debug.xcconfig */,
+				88DF67ACCDA7103588FEED3E /* Pods-TherapyTrakTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		020B3E31280A84FD00500180 /* TherapyTrak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 020B3E5C280A84FE00500180 /* Build configuration list for PBXNativeTarget "TherapyTrak" */;
+			buildPhases = (
+				85037818F46F94FC3622C1BE /* [CP] Check Pods Manifest.lock */,
+				020B3E2E280A84FD00500180 /* Sources */,
+				020B3E2F280A84FD00500180 /* Frameworks */,
+				020B3E30280A84FD00500180 /* Resources */,
+				82F30832CFCFECC9591A9488 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TherapyTrak;
+			productName = TherapyTrak;
+			productReference = 020B3E32280A84FD00500180 /* TherapyTrak.app */;
+			productType = "com.apple.product-type.application";
+		};
+		020B3E47280A84FE00500180 /* TherapyTrakTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 020B3E5F280A84FE00500180 /* Build configuration list for PBXNativeTarget "TherapyTrakTests" */;
+			buildPhases = (
+				7F93A23B4D3CD3499A31B777 /* [CP] Check Pods Manifest.lock */,
+				020B3E44280A84FE00500180 /* Sources */,
+				020B3E45280A84FE00500180 /* Frameworks */,
+				020B3E46280A84FE00500180 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				020B3E4A280A84FE00500180 /* PBXTargetDependency */,
+			);
+			name = TherapyTrakTests;
+			productName = TherapyTrakTests;
+			productReference = 020B3E48280A84FE00500180 /* TherapyTrakTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		020B3E51280A84FE00500180 /* TherapyTrakUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 020B3E62280A84FE00500180 /* Build configuration list for PBXNativeTarget "TherapyTrakUITests" */;
+			buildPhases = (
+				94B4AB7FE2EC3FAF95DBF3E9 /* [CP] Check Pods Manifest.lock */,
+				020B3E4E280A84FE00500180 /* Sources */,
+				020B3E4F280A84FE00500180 /* Frameworks */,
+				020B3E50280A84FE00500180 /* Resources */,
+				3808E42A3453766A45C8452C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				020B3E54280A84FE00500180 /* PBXTargetDependency */,
+			);
+			name = TherapyTrakUITests;
+			productName = TherapyTrakUITests;
+			productReference = 020B3E52280A84FE00500180 /* TherapyTrakUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		020B3E2A280A84FD00500180 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					020B3E31280A84FD00500180 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					020B3E47280A84FE00500180 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 020B3E31280A84FD00500180;
+					};
+					020B3E51280A84FE00500180 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 020B3E31280A84FD00500180;
+					};
+				};
+			};
+			buildConfigurationList = 020B3E2D280A84FD00500180 /* Build configuration list for PBXProject "TherapyTrak" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 020B3E29280A84FD00500180;
+			productRefGroup = 020B3E33280A84FD00500180 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				020B3E31280A84FD00500180 /* TherapyTrak */,
+				020B3E47280A84FE00500180 /* TherapyTrakTests */,
+				020B3E51280A84FE00500180 /* TherapyTrakUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		020B3E30280A84FD00500180 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020B3E42280A84FE00500180 /* LaunchScreen.storyboard in Resources */,
+				020B3E3F280A84FE00500180 /* Assets.xcassets in Resources */,
+				02F30903280A8665002545C4 /* GoogleService-Info.plist in Resources */,
+				020B3E3D280A84FD00500180 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		020B3E46280A84FE00500180 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		020B3E50280A84FE00500180 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3808E42A3453766A45C8452C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TherapyTrak-TherapyTrakUITests/Pods-TherapyTrak-TherapyTrakUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TherapyTrak-TherapyTrakUITests/Pods-TherapyTrak-TherapyTrakUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TherapyTrak-TherapyTrakUITests/Pods-TherapyTrak-TherapyTrakUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F93A23B4D3CD3499A31B777 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TherapyTrakTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82F30832CFCFECC9591A9488 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TherapyTrak/Pods-TherapyTrak-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TherapyTrak/Pods-TherapyTrak-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TherapyTrak/Pods-TherapyTrak-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85037818F46F94FC3622C1BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TherapyTrak-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94B4AB7FE2EC3FAF95DBF3E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TherapyTrak-TherapyTrakUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		020B3E2E280A84FD00500180 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				023F2E0A280BB2C000627C4E /* TherapistPatient.swift in Sources */,
+				026AC9EF280B678D0000765A /* TherapySessionTableViewCell.swift in Sources */,
+				0263EFEB280AEF1900C81D37 /* TherapyFirebase.swift in Sources */,
+				020B3E3A280A84FD00500180 /* RecordTherapyViewController.swift in Sources */,
+				02365101280B92BE00763053 /* SettingsView.swift in Sources */,
+				02F30905280A9DC7002545C4 /* LoginScreenTherapy.swift in Sources */,
+				026AC9ED280B64FE0000765A /* TherapyHomeScreenViewController.swift in Sources */,
+				02D6DA8E280AE64D00A7EF4C /* TherapySignInViewController.swift in Sources */,
+				020B3E36280A84FD00500180 /* AppDelegate.swift in Sources */,
+				020B3E38280A84FD00500180 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		020B3E44280A84FE00500180 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020B3E4D280A84FE00500180 /* TherapyTrakTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		020B3E4E280A84FE00500180 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020B3E59280A84FE00500180 /* TherapyTrakUITestsLaunchTests.swift in Sources */,
+				020B3E57280A84FE00500180 /* TherapyTrakUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		020B3E4A280A84FE00500180 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 020B3E31280A84FD00500180 /* TherapyTrak */;
+			targetProxy = 020B3E49280A84FE00500180 /* PBXContainerItemProxy */;
+		};
+		020B3E54280A84FE00500180 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 020B3E31280A84FD00500180 /* TherapyTrak */;
+			targetProxy = 020B3E53280A84FE00500180 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		020B3E3B280A84FD00500180 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				020B3E3C280A84FD00500180 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		020B3E40280A84FE00500180 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				020B3E41280A84FE00500180 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		020B3E5A280A84FE00500180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		020B3E5B280A84FE00500180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		020B3E5D280A84FE00500180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C94DDD49408DAE4E0AD3232C /* Pods-TherapyTrak.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TherapyTrak/TherapyTrak.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3FC37JZ2V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TherapyTrak/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "TherapyTrak needs to access your camera in order to record your activities.";
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "TherapyTrak needs to access your health records in order to see your latest heart rate";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "TherapyTrak needs to access your health records in order to see your latest heart rate";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LAHacks.TherapyTrak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		020B3E5E280A84FE00500180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7669C01AE0D0DBF9B14FAD4A /* Pods-TherapyTrak.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TherapyTrak/TherapyTrak.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3FC37JZ2V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TherapyTrak/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "TherapyTrak needs to access your camera in order to record your activities.";
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "TherapyTrak needs to access your health records in order to see your latest heart rate";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "TherapyTrak needs to access your health records in order to see your latest heart rate";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LAHacks.TherapyTrak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		020B3E60280A84FE00500180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E5754B2BC1DB42D74E52532 /* Pods-TherapyTrakTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3FC37JZ2V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LAHacks.TherapyTrakTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TherapyTrak.app/TherapyTrak";
+			};
+			name = Debug;
+		};
+		020B3E61280A84FE00500180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88DF67ACCDA7103588FEED3E /* Pods-TherapyTrakTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3FC37JZ2V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LAHacks.TherapyTrakTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TherapyTrak.app/TherapyTrak";
+			};
+			name = Release;
+		};
+		020B3E63280A84FE00500180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B1FB8B2F81FFB2147AFF49A /* Pods-TherapyTrak-TherapyTrakUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3FC37JZ2V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LAHacks.TherapyTrakUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TherapyTrak;
+			};
+			name = Debug;
+		};
+		020B3E64280A84FE00500180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D8C9F9CB89E72E2ABE6473E /* Pods-TherapyTrak-TherapyTrakUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3FC37JZ2V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LAHacks.TherapyTrakUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TherapyTrak;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		020B3E2D280A84FD00500180 /* Build configuration list for PBXProject "TherapyTrak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020B3E5A280A84FE00500180 /* Debug */,
+				020B3E5B280A84FE00500180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		020B3E5C280A84FE00500180 /* Build configuration list for PBXNativeTarget "TherapyTrak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020B3E5D280A84FE00500180 /* Debug */,
+				020B3E5E280A84FE00500180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		020B3E5F280A84FE00500180 /* Build configuration list for PBXNativeTarget "TherapyTrakTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020B3E60280A84FE00500180 /* Debug */,
+				020B3E61280A84FE00500180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		020B3E62280A84FE00500180 /* Build configuration list for PBXNativeTarget "TherapyTrakUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020B3E63280A84FE00500180 /* Debug */,
+				020B3E64280A84FE00500180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 020B3E2A280A84FD00500180 /* Project object */;
+}

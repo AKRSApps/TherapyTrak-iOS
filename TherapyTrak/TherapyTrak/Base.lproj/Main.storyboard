@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RDo-DL-DCb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Therapy Sign In View Controller-->
+        <scene sceneID="Kok-YQ-ruT">
+            <objects>
+                <viewController id="RDo-DL-DCb" customClass="TherapySignInViewController" customModule="TherapyTrak" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lbg-Ym-Vju">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rfc-Fw-9f3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wfy-XI-8wU"/>
+                    <connections>
+                        <segue destination="TyZ-3X-y1x" kind="show" identifier="showTherapyGoogleSignin" destinationCreationSelector="therapySignInShowSwiftUI:" id="wWX-9l-q4x"/>
+                        <segue destination="Gol-p0-s1t" kind="show" identifier="enterMainAppUserSignedIn" id="frs-va-NO7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zXd-MV-SfJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1059" y="-60"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="wvy-yY-hNa">
+            <objects>
+                <hostingController modalPresentationStyle="overFullScreen" id="TyZ-3X-y1x" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Oju-kg-VQ6"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I6d-Ow-QAq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-333" y="78"/>
+        </scene>
+        <!--Welcome-->
+        <scene sceneID="PSE-9J-JG6">
+            <objects>
+                <tableViewController modalPresentationStyle="fullScreen" id="8SB-Tf-8jd" customClass="TherapyHomeScreenViewController" customModule="TherapyTrak" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="HoW-db-x03">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="therapySessionCell" rowHeight="83" id="0MX-bL-2Vh" customClass="TherapySessionTableViewCell" customModule="TherapyTrak" customModuleProvider="target">
+                                <rect key="frame" x="20" y="32" width="374" height="83"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0MX-bL-2Vh" id="aGk-GI-Yns">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="83"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hand-Raises" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5G-7K-171">
+                                            <rect key="frame" x="14" y="10" width="151" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="YVw-5h-6T6"/>
+                                                <constraint firstAttribute="width" constant="151" id="d49-Jf-fYm"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TherapyHeartRate" translatesAutoresizingMaskIntoConstraints="NO" id="XO9-Dw-46P">
+                                            <rect key="frame" x="232" y="11" width="38" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="bdK-9w-uXR"/>
+                                                <constraint firstAttribute="width" constant="38" id="lKj-Jy-CRe"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apr 16, 2022 at 12:56 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEx-Cq-Gr7">
+                                            <rect key="frame" x="14" y="57" width="201" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="201" id="37U-8c-DCx"/>
+                                                <constraint firstAttribute="height" constant="15" id="Lhx-t2-891"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 Reps" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x61-KJ-dLI">
+                                            <rect key="frame" x="211" y="52" width="143" height="21"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="75 BPM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7W4-q0-xOe">
+                                            <rect key="frame" x="270" y="11" width="84" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="84" id="UNq-Az-12n"/>
+                                                <constraint firstAttribute="height" constant="21" id="nE5-Y1-9ht"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="x61-KJ-dLI" secondAttribute="trailing" constant="20" symbolic="YES" id="0fR-UT-LON"/>
+                                        <constraint firstItem="XO9-Dw-46P" firstAttribute="top" secondItem="aGk-GI-Yns" secondAttribute="topMargin" id="1a1-OR-q7I"/>
+                                        <constraint firstItem="cEx-Cq-Gr7" firstAttribute="top" secondItem="r5G-7K-171" secondAttribute="bottom" constant="26" id="1cF-4z-MVi"/>
+                                        <constraint firstAttribute="bottom" secondItem="cEx-Cq-Gr7" secondAttribute="bottom" constant="11" id="4i2-Pp-kEk"/>
+                                        <constraint firstItem="7W4-q0-xOe" firstAttribute="leading" secondItem="XO9-Dw-46P" secondAttribute="trailing" id="B6i-nF-q2Y"/>
+                                        <constraint firstItem="XO9-Dw-46P" firstAttribute="leading" secondItem="r5G-7K-171" secondAttribute="trailing" constant="67" id="HHh-BP-ubp"/>
+                                        <constraint firstItem="r5G-7K-171" firstAttribute="top" secondItem="aGk-GI-Yns" secondAttribute="top" constant="10" id="HHh-cv-7YG"/>
+                                        <constraint firstItem="x61-KJ-dLI" firstAttribute="top" secondItem="XO9-Dw-46P" secondAttribute="bottom" constant="20" id="IbV-ie-a6r"/>
+                                        <constraint firstItem="cEx-Cq-Gr7" firstAttribute="top" secondItem="r5G-7K-171" secondAttribute="bottom" constant="26" id="K6w-4b-Qdk"/>
+                                        <constraint firstItem="XO9-Dw-46P" firstAttribute="leading" secondItem="r5G-7K-171" secondAttribute="trailing" constant="67" id="QmQ-78-bFb"/>
+                                        <constraint firstItem="x61-KJ-dLI" firstAttribute="top" secondItem="7W4-q0-xOe" secondAttribute="bottom" constant="20" id="RFE-qw-HcT"/>
+                                        <constraint firstAttribute="bottom" secondItem="x61-KJ-dLI" secondAttribute="bottom" constant="10" id="XTY-Yg-zas"/>
+                                        <constraint firstItem="x61-KJ-dLI" firstAttribute="top" secondItem="7W4-q0-xOe" secondAttribute="bottom" constant="20" id="aND-Md-VD0"/>
+                                        <constraint firstItem="cEx-Cq-Gr7" firstAttribute="leading" secondItem="aGk-GI-Yns" secondAttribute="leading" constant="14" id="cxj-mJ-bbd"/>
+                                        <constraint firstItem="7W4-q0-xOe" firstAttribute="top" secondItem="aGk-GI-Yns" secondAttribute="topMargin" id="fM7-fG-3Ps"/>
+                                        <constraint firstItem="r5G-7K-171" firstAttribute="leading" secondItem="aGk-GI-Yns" secondAttribute="leading" constant="14" id="fgC-yi-CdN"/>
+                                        <constraint firstItem="x61-KJ-dLI" firstAttribute="leading" secondItem="aGk-GI-Yns" secondAttribute="leading" constant="211" id="i6J-ua-NCQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="cEx-Cq-Gr7" secondAttribute="trailing" constant="159" id="k7d-sv-fZw"/>
+                                        <constraint firstItem="7W4-q0-xOe" firstAttribute="trailing" secondItem="aGk-GI-Yns" secondAttribute="trailingMargin" id="mXH-3m-63u"/>
+                                        <constraint firstItem="7W4-q0-xOe" firstAttribute="leading" secondItem="XO9-Dw-46P" secondAttribute="trailing" id="xWR-EU-61M"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="avgHeartRateLabel" destination="7W4-q0-xOe" id="8kt-xa-1dO"/>
+                                    <outlet property="dateLabel" destination="cEx-Cq-Gr7" id="hg0-Yw-5bJ"/>
+                                    <outlet property="numberOfRepsLabel" destination="x61-KJ-dLI" id="Pd3-Zp-Cy0"/>
+                                    <outlet property="stretchTypeLabel" destination="r5G-7K-171" id="qfD-F5-hrj"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8SB-Tf-8jd" id="Lba-OP-Myy"/>
+                            <outlet property="delegate" destination="8SB-Tf-8jd" id="idD-Sn-Xho"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Welcome" largeTitleDisplayMode="always" id="9V7-4O-Lw7">
+                        <barButtonItem key="leftBarButtonItem" title="Settings" image="gearshape.circle.fill" catalog="system" id="qOX-l0-cfI">
+                            <connections>
+                                <segue destination="G4g-LY-ZkA" kind="show" destinationCreationSelector="therapySettingsHostedController:" id="paw-Vk-InU"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ne8-bN-8xB">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="therapyRecordingSegue" id="vZv-uS-c8U"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="RDo-DL-DCb" kind="showDetail" identifier="therapySignOutSegue" id="eGW-dM-p73"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBP-EU-nKN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3340.579710144928" y="95.758928571428569"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="8U9-c9-ys3">
+            <objects>
+                <hostingController id="G4g-LY-ZkA" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="m5E-L8-EIj"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8E7-ss-Q6e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4952" y="96"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RecordTherapyViewController" customModule="TherapyTrak" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Lb9-ik-QSv"/>
+                    <navigationItem key="navigationItem" id="3D2-Ax-wI3"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4145" y="-429"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="0qp-53-frw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Gol-p0-s1t" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" id="zeN-En-gnv"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="luj-zy-WsD"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="O9f-yv-3ih">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8SB-Tf-8jd" kind="relationship" relationship="rootViewController" id="d4b-Iv-yAY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Y7-Rz-zOH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2430.434782608696" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TherapyHeartRate" width="150" height="150"/>
+        <image name="gearshape.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
